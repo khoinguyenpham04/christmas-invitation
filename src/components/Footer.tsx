@@ -2,10 +2,10 @@ import { Github } from 'lucide-react'
 
 export function Footer() {
   return (
-    <footer className="absolute bottom-0 left-0 right-0 text-center py-2 text-xs text-gray-500">
+    <footer className="absolute bottom-0 left-0 right-0 text-center pt-6 pb-2 text-xs text-gray-500">
       <p>Made by Noah</p>
       <a
-        href="https://github.com/yourusername/christmas-invitation"
+        href="https://github.com/khoinguyenpham04/christmas-invitation"
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex items-center hover:text-gray-700 transition-colors"
