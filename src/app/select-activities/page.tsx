@@ -11,14 +11,14 @@ import dynamic from 'next/dynamic'
 const ReactConfetti = dynamic(() => import('react-confetti'), { ssr: false })
 
 const activities = [
-  { name: 'Hot Chocolate', image: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=300&q=80' },
+  { name: 'Hot Chocolate', image: '/hotchoc.jpg' },
   { name: 'Waffles', image: 'https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=300&q=80' },
-  { name: 'Watch Movies', image: 'https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=300&q=80' },
-  { name: 'Ice Skating', image: 'https://images.unsplash.com/photo-1608422050646-a6f9e4b74f7e?auto=format&fit=crop&w=300&q=80' },
-  { name: 'Christmas Shopping', image: 'https://images.unsplash.com/photo-1607083206968-13611e3d76db?auto=format&fit=crop&w=300&q=80' },
-  { name: 'Carousel Ride', image: 'https://images.unsplash.com/photo-1572307480813-ceb0e59d8325?auto=format&fit=crop&w=300&q=80' },
+  { name: 'Watch Movies', image: '/cinema.jpg' },
+  { name: 'Ice Skating', image: '/ice skating.jpg' },
+  { name: 'whatever this is ;)', image: '/misle.jpeg' },
+  { name: 'Carousel Ride', image: '/carousel.jpg' },
   { name: 'Gingerbread Making', image: 'https://images.unsplash.com/photo-1607920592519-bab4d7db727d?auto=format&fit=crop&w=300&q=80' },
-  { name: 'Carol Singing', image: 'https://images.unsplash.com/photo-1513885535751-8b9238bd345a?auto=format&fit=crop&w=300&q=80' },
+  { name: 'Bratwurst!', image: '/bratwurst.jpeg' },
   { name: 'Gift Wrapping', image: 'https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&w=300&q=80' },
 ]
 
@@ -63,7 +63,7 @@ export default function SelectActivities() {
         <h1 className="text-3xl font-bold text-red-500 mb-6 text-center">Choose Our Activities</h1>
         
         <div className="grid grid-cols-3 gap-4 mb-6">
-          {activities.map((activity, index) => (
+          {activities.map((activity) => (
             <motion.div
               key={activity.name}
               className={`relative cursor-pointer rounded-lg overflow-hidden ${

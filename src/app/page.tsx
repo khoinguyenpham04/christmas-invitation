@@ -130,15 +130,15 @@ export default function InvitationPage() {
                 }}
               >
                 <h1 className="text-2xl font-bold text-red-500 mb-2">Dear Maisie</h1>
-                <div className="w-[300px] h-[300px] mb-2">
+                <div className="w-[150px] h-[150px] mb-2 flex items-center justify-center">
                   <video
-                    width="200"
-                    height="200"
+                    width="150"
+                    height="150"
                     autoPlay
                     loop
                     muted
                     playsInline
-                    className="rounded-lg"
+                    className="rounded-lg w-full h-full object-contain"
                   >
                     <source src="/theodore-seville-alvin-and-the-chipmunks.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
